@@ -25,13 +25,22 @@ namespace expenses_analysis
           
             modelBuilder.Entity<Users>().HasKey(x => x.id_User);
             modelBuilder.Entity<Budget>().HasKey(x => x.id_Budget);
+            modelBuilder.Entity<Analytics>().HasKey(x => x.id_Analytics);
+            modelBuilder.Entity<Expenses>().HasKey(x => x.id_Expenses);
+            modelBuilder.Entity<Category>().HasKey(x => x.id_Category);
 
             modelBuilder.Entity<Users>().Property(x => x.id_User).UseIdentityColumn();
             modelBuilder.Entity<Budget>().Property(x => x.id_Budget).UseIdentityColumn();
+            modelBuilder.Entity<Analytics>().Property(x => x.id_Analytics).UseIdentityColumn();
+            modelBuilder.Entity<Expenses>().Property(x => x.id_Expenses).UseIdentityColumn();
+            modelBuilder.Entity<Category>().Property(x => x.id_Category).UseIdentityColumn();
             
 
         }
         public DbSet<Users> Users { get; set; }
         public DbSet<Budget> Budget { get; set; }
+        public DbSet<Analytics> Analytics { get; set; }
+        public DbSet<Expenses> Expenses { get; set; }
+        public DbSet<Category> Category { get; set; }
     }
 }
