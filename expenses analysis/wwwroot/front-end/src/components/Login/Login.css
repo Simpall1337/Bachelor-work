@@ -1,0 +1,112 @@
+/* Login.css */
+.error-message {
+  color: red; /* Красный цвет */
+  font-weight: bold; /* Жирный текст */
+}
+
+.login-header {
+  text-align: center; /* Выравниваем текст по центру */
+  font-size: 24px; /* Изменяем размер шрифта для большей выразительности */
+  margin-bottom: 20px; /* Добавляем нижний отступ для отделения от остальных элементов */
+  color: #007bff; /* Цвет текста */
+  text-transform: uppercase; /* Преобразуем текст в верхний регистр */
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-top: 20px; /* Уменьшено для меньшего смещения */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="submit"],
+.login-form input,
+.login-form select
+  {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.styled-div {
+  color: red; /* Красный цвет текста */
+  font-weight: bold; /* Жирный текст */
+  text-align: center; /* Выравнивание по центру */
+}
+
+.login-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-form-button-change {
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  display: block; /* Делаем кнопку блочным элементом */
+  margin: 0 auto; /* Устанавливаем отступы слева и справа на автоматические для центрирования */
+}
+.container {
+  display: block;
+  margin-bottom: 60px;
+}
+.login-form-button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px; /* добавляем небольшой отступ между элементами */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #0056b3;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-form-button:hover {
+  background-color: #0056b3;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.login-form div {
+  margin-top: 10px;
+}
+
+.login-form p {
+  color: red;
+  margin: 5px 0;
+}

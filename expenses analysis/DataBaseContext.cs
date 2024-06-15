@@ -33,8 +33,8 @@ namespace expenses_analysis
             modelBuilder.Entity<Budget>().Property(x => x.id_Budget).UseIdentityColumn();
             modelBuilder.Entity<Analytics>().Property(x => x.id_Analytics).UseIdentityColumn();
             modelBuilder.Entity<Expenses>().Property(x => x.id_Expenses).UseIdentityColumn();
-            modelBuilder.Entity<Category>().Property(x => x.id_Category).UseIdentityColumn();
-            
+            modelBuilder.Entity<Category>().Property(x => x.id_Category).UseIdentityColumn(); // поменять привязку с Category на Expenses изменив в табл. Expenses category на id_category и создрать FK  
+
 
         }
         public DbSet<Users> Users { get; set; }

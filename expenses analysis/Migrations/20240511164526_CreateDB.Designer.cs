@@ -12,8 +12,8 @@ using expenses_analysis;
 namespace expenses_analysis.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20240501184817_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240511164526_CreateDB")]
+    partial class CreateDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -141,7 +141,15 @@ namespace expenses_analysis.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("login")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

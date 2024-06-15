@@ -1,0 +1,94 @@
+.category-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .category-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .category-table th,
+  .category-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .category-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .category-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .category-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .category-table th, .category-table td {
+    text-align: center;
+  }
+  
+  .category-table button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .category-table button:hover {
+    background-color: #007bff;
+  }
+  
+  .form-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-container input,
+  .form-container select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-container input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-container input[type="submit"]:hover {
+    background-color: #007bff;
+  }
+  
+  .form-container .login-form-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: auto;
+  }
+  
+  .form-container .login-form-button:hover {
+    background-color: #e53935;
+  }

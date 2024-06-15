@@ -1,5 +1,4 @@
-using expenses_analysis;
-
+﻿using expenses_analysis;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -10,6 +9,17 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataBaseContext>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin() // Ðàçðåøàåì äîñòóï èç ëþáûõ èñòî÷íèêîâ
+                   .AllowAnyMethod() // Ðàçðåøàåì èñïîëüçîâàíèå ëþáûõ HTTP-ìåòîäîâ
+                   .AllowAnyHeader(); // Ðàçðåøàåì èñïîëüçîâàíèå ëþáûõ çàãîëîâêîâ
+        });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -18,6 +28,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("AllowAll");
 
 app.UseHttpsRedirection();
 
